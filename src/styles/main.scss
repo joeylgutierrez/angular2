@@ -1,0 +1,94 @@
+$md-font-url: "../../../node_modules/ng2-material/dist/";
+$fa-font-path:   "../fonts";
+
+// Import bootstrap and fontawesome
+@import "bootstrap";
+@import "font-awesome";
+
+
+@import './vendor/bootstrap-custom';
+@import "../../node_modules/ng2-material/dist/font";
+@import "../../node_modules/ng2-material/source/all";
+@import './partials/variables';
+
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Space out content a bit */
+body {
+  min-height: 100%;
+  width: 100%;
+  // padding-top: 20px;
+  // padding-bottom: 20px;
+  margin: 0px;
+  padding: 0px;
+
+  .container-fluid {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+.main-template {
+  position: fixed;
+  top: $header-height - 1;
+  bottom: 0;
+  overflow: auto;
+}
+
+.main {
+  @extend .main-template;
+  left: ($sidebar-left-width + $sidebar-arrow-width + 10px);
+  right: ($sidebar-right-width + $sidebar-arrow-width + 10px);
+  padding-top: 15px;
+  margin-right: 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.contentArea {
+  padding-left: 25px;
+  padding-right: 15px;
+  margin-right: 15px;
+  position: absolute;
+}
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
+
